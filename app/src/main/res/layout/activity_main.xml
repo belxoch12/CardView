@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/principal"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/text1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true"
+       android:layout_marginStart="120dp"
+       android:layout_marginTop="70dp"
+       android:layout_marginEnd="120dp"
+       android:text="Practica 1"
+       android:textSize="34sp"
+       android:textStyle="bold" />
+
+   <GridLayout
+       android:layout_width="383dp"
+       android:layout_height="567dp"
+       android:layout_below="@id/text1"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true"
+       android:layout_marginStart="10dp"
+       android:layout_marginTop="30dp"
+       android:layout_marginEnd="10dp"
+       android:layout_marginBottom="25dp"
+       android:columnCount="3"
+       android:rowCount="3">
+
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardprimero"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="0"
+          android:layout_rowWeight="1"
+          android:layout_column="0"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cafe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 1"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardsegundo"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="0"
+          android:layout_rowWeight="1"
+          android:layout_column="1"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/comida" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 2"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardtercero"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="0"
+          android:layout_rowWeight="1"
+          android:layout_column="2"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/cuarto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 3"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardcuarto"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="1"
+          android:layout_rowWeight="1"
+          android:layout_column="0"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:src="@drawable/desayuno" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 4"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardquinto"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="1"
+          android:layout_rowWeight="1"
+          android:layout_column="1"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fruta" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 5"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardsexto"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="1"
+          android:layout_rowWeight="1"
+          android:layout_column="2"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:src="@drawable/primero" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 6"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardseptimo"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="2"
+          android:layout_rowWeight="1"
+          android:layout_column="0"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:src="@drawable/quinto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 7"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardoctavo"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="2"
+          android:layout_rowWeight="1"
+          android:layout_column="1"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:src="@drawable/segundo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 8"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardnoveno"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="2"
+          android:layout_rowWeight="1"
+          android:layout_column="2"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          android:layout_margin="8dp"
+          android:clickable="true"
+          android:foreground="?attr/selectableItemBackground"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="8dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tercero" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno 9"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+         </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+
+   </GridLayout>
+
+</RelativeLayout>
+
